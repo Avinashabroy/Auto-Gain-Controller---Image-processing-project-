@@ -20,3 +20,16 @@ Pixels = 10,20,30,40,50,60,70,80,80
 Sum    = 440
 
 Average = 440 / 9 = 48
+
+# STEP 2: CALCULATE GAIN
+Compare the average brightness with the user-defined target value
+Gain = Target Brightness / Average Brightness
+
+Example:
+Average = 48
+Target  = 120
+Gain    = 120 / 48 = 2.5
+
+Q8 Gain = Gain × 256
+        = 2.5 × 256
+       = 640
