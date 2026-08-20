@@ -15,6 +15,7 @@ Divide the total sum by the number of pixels
 The result represents the average brightness of the frame
 
 Example:
-Pixels = 10,20,30,40,50,60,70,80,80
+Pixels = 10,20,30,40,50,60,70,80,80 
+
 Sum    = 440
 Average = 440 / 9 = 48
