@@ -8,7 +8,7 @@ AGC (Automatic Gain Control) is an ISP feature that automatically adjusts the se
 
 ![AGC Before and After](agc_before_after.png)
 ## Working Principal
-Step 1: Calculate Average Brightness
+# Step 1: Calculate Average Brightness
 Read 9 pixels from the input frame
 Add all pixel values
 Divide the total sum by the number of pixels
