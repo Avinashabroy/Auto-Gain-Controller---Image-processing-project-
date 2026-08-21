@@ -34,13 +34,12 @@ Q8 Gain = Gain × 256
         = 2.5 × 256
        = 640
 # STEP 3: APPLY GAIN
-# Read the stored pixels from the frame buffer
-# Apply the calculated Q8 gain to each pixel
-# Output = (Pixel × Q8 Gain) / 256
-# Limit the output to 255 if it exceeds the 8-bit range
-#
-# Example:
-# Pixel = 20
-# Q8    = 640
-# Output = (20 × 640) / 256
-#        = 50
+Read the stored pixels from the frame buffer
+Apply the calculated Q8 gain to each pixel
+Output = (Pixel × Q8 Gain) / 256
+Limit the output to 255 if it exceeds the 8-bit range
+
+Example:
+Pixel = 20
+Q8    = 640
+Output = (20 × 640) / 256  = 50
