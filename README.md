@@ -33,7 +33,20 @@ Gain    = 120 / 48 = 2.5
 Q8 Gain = Gain × 256
         = 2.5 × 256
        = 640
-# STEP 3: APPLY GAIN
+
+# STEP 3: FRAME BUFFER
+Store the input pixels in the frame buffer during the write phase
+After the gain is calculated, read the stored pixels during the read phase
+The frame buffer allows the same frame to be processed with the new gain
+
+WRITE:
+Pixel input → Frame Buffer
+
+READ:
+Frame Buffer → Gain Apply
+
+# This separates pixel storage from pixel processing.
+# STEP 4: APPLY GAIN
 Read the stored pixels from the frame buffer
 Apply the calculated Q8 gain to each pixel
 Output = (Pixel × Q8 Gain) / 256
