@@ -56,3 +56,24 @@ Example:
 Pixel = 20
 Q8    = 640
 Output = (20 × 640) / 256  = 50
+
+# Main data flow
+Pixel Input
+    │
+    ▼
+Average
+    │
+    │ avg
+    ▼
+Gain Controller ◄──── Target Value
+    │
+    │ q8
+    ▼
+Frame Buffer
+    │
+    │ pixel_read
+    ▼
+Gain Apply
+    │
+    ▼
+Pixel Output
