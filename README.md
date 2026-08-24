@@ -117,3 +117,6 @@ Input Pixel       Output Pixel
     70      →         175
     80      →         200
     80      →         200
+
+#Auctal Result 
+![Auctal Result ](Resut.png)
